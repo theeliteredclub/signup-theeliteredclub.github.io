@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Red Club Sign Up</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #3a3a3a, #b71c1c);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 400px;
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .container h2 {
+      text-align: center;
+      color: red;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: red;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    .form-group input[type="submit"] {
+      background: red;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .form-group input[type="submit"]:hover {
+      background: black;
+    }
+    .home-icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .home-icon a {
+      font-size: 30px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .home-icon a:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="home-icon">
+    <a href="https://theeliteredclub.github.io">
+      <i class="fas fa-home"></i>
+    </a>
+  </div>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form action="https://formsubmit.co/d9f61c17f613fa74cac19820481f9b21" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Re-Type Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <input type="hidden" name="_next" value="https://theeliteredclub.github.io">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="form-group">
+        <input type="submit" value="Sign Up">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
